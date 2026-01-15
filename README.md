@@ -4,17 +4,17 @@ A modern, full-stack capable E-commerce application built with React, Vite, Tail
 
 ## Features
 
-- **Storefront**: Home page, Product Catalog with filters, Product Details, Cart, Checkout.
+- **Storefront**: Home page, Product Catalog with filters, Categories Explorer, Product Details, Cart, Checkout.
 - **User Account**: Login, Register, Profile with Order History.
 - **Admin Panel**: Dashboard, Product Management (CRUD).
 - **Tech Stack**:
-  - React 18 + Vite
+  - React 19 + Vite
   - TailwindCSS for styling
   - Zustand for state management
   - React Router v6 for routing
   - React Hook Form + Zod for forms
   - Axios for API requests
-  - JSON-Server for mock backend
+  - Node.js + JSON-Server (Custom entry point for deployment)
 
 ## Getting Started
 
@@ -75,6 +75,17 @@ Create a `.env` file in the root directory to configure the API URL:
 ```env
 VITE_API_URL=http://localhost:3000
 ```
+
+## Deployment
+
+This project is configured for a decoupled deployment:
+
+- **Frontend**: Deployed on **Vercel**.
+- **Backend**: Deployed on **Render** (using the custom `server.js`).
+
+### Production Environment Variables
+On Vercel, ensure you set the following environment variable:
+- `VITE_API_URL`: Your Render backend URL (e.g., `https://your-api-name.onrender.com`).
 
 ## Admin Access
 To access the admin panel, use the pre-configured admin account:
