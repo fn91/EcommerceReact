@@ -1,0 +1,163 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Wireless Headphones",
+            "price": 99.99,
+            "category": "Electronics",
+            "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
+            "description": "High quality wireless headphones with noise cancellation.",
+            "stock": 10,
+            "rating": 4.5
+        },
+        {
+            "id": 2,
+            "name": "Smart Watch",
+            "price": 199.99,
+            "category": "Electronics",
+            "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=80",
+            "description": "Advanced smartwatch with health tracking features.",
+            "stock": 5,
+            "rating": 4.8
+        },
+        {
+            "id": 3,
+            "name": "Running Shoes",
+            "price": 79.99,
+            "category": "Sports",
+            "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
+            "description": "Lightweight running shoes for daily use.",
+            "stock": 20,
+            "rating": 4.2
+        },
+        {
+            "id": 4,
+            "name": "Mechanical Keyboard",
+            "price": 129.99,
+            "category": "Electronics",
+            "image": "https://images.unsplash.com/photo-1587829741301-dc798b91add1?w=500&q=80",
+            "description": "RGB mechanical keyboard with blue switches for tactile feedback.",
+            "stock": 15,
+            "rating": 4.7
+        },
+        {
+            "id": 5,
+            "name": "Leather Backpack",
+            "price": 89.99,
+            "category": "Fashion",
+            "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=80",
+            "description": "Premium leather backpack suitable for laptops and daily commute.",
+            "stock": 8,
+            "rating": 4.6
+        },
+        {
+            "id": 6,
+            "name": "Smart Home Speaker",
+            "price": 49.99,
+            "category": "Electronics",
+            "image": "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=500&q=80",
+            "description": "Voice-controlled smart speaker with high-fidelity sound.",
+            "stock": 30,
+            "rating": 4.3
+        },
+        {
+            "id": 7,
+            "name": "Yoga Mat",
+            "price": 29.99,
+            "category": "Sports",
+            "image": "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f?w=500&q=80",
+            "description": "Non-slip yoga mat with carrying strap, perfect for home workouts.",
+            "stock": 50,
+            "rating": 4.9
+        },
+        {
+            "id": 8,
+            "name": "Denim Jacket",
+            "price": 69.99,
+            "category": "Clothing",
+            "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=500&q=80",
+            "description": "Classic vintage style denim jacket for all seasons.",
+            "stock": 12,
+            "rating": 4.4
+        },
+        {
+            "id": 9,
+            "name": "Coffee Maker",
+            "price": 149.99,
+            "category": "Home",
+            "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=500&q=80",
+            "description": "Programmable coffee maker with thermal carafe.",
+            "stock": 7,
+            "rating": 4.5
+        },
+        {
+            "id": 10,
+            "name": "Sunglasses",
+            "price": 159.99,
+            "category": "Fashion",
+            "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&q=80",
+            "description": "Polarized sunglasses with UV protection and stylish frame.",
+            "stock": 25,
+            "rating": 4.7
+        },
+        {
+            "id": 11,
+            "name": "Gaming Mouse",
+            "price": 59.99,
+            "category": "Electronics",
+            "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&q=80",
+            "description": "High-precision gaming mouse with programmable buttons.",
+            "stock": 18,
+            "rating": 4.6
+        },
+        {
+            "id": 12,
+            "name": "Cotton T-Shirt",
+            "price": 19.99,
+            "category": "Clothing",
+            "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80",
+            "description": "100% organic cotton t-shirt, breathable and comfortable.",
+            "stock": 100,
+            "rating": 4.1
+        },
+        {
+            "id": 13,
+            "name": "Desk Lamp",
+            "price": 39.99,
+            "category": "Home",
+            "image": "https://images.unsplash.com/photo-1507473888900-52e1adad5452?w=500&q=80",
+            "description": "Adjustable LED desk lamp with multiple brightness levels.",
+            "stock": 22,
+            "rating": 4.4
+        },
+        {
+            "id": 14,
+            "name": "Water Bottle",
+            "price": 24.99,
+            "category": "Sports",
+            "image": "https://images.unsplash.com/photo-1602143407151-01114192003f?w=500&q=80",
+            "description": "Insulated stainless steel water bottle, keeps drinks cold for 24h.",
+            "stock": 40,
+            "rating": 4.8
+        },
+        {
+            "id": 15,
+            "name": "Plant Pot",
+            "price": 14.99,
+            "category": "Home",
+            "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=500&q=80",
+            "description": "Ceramic plant pot with drainage hole, modern design.",
+            "stock": 35,
+            "rating": 4.3
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "Admin User",
+            "email": "admin@example.com",
+            "role": "admin"
+        }
+    ],
+    "orders": []
+}
