@@ -1,100 +1,63 @@
-# React E-commerce Project
+# React E-commerce Premium & Secure
 
-A modern, full-stack capable E-commerce application built with React, Vite, TailwindCSS, and Zustand.
+Una aplicación E-commerce de alto rendimiento construida con React 19 y un Backend blindado bajo estándares de seguridad **AppSec/OWASP**.
 
-## Features
+## ✨ Características Destacadas
 
-- **Storefront**: Home page, Product Catalog with filters, Categories Explorer, Product Details, Cart, Checkout.
-- **User Account**: Login, Register, Profile with Order History.
-- **Admin Panel**: Dashboard, Product Management (CRUD).
-- **Tech Stack**:
-  - React 19 + Vite
-  - TailwindCSS for styling
-  - Zustand for state management
-  - React Router v6 for routing
-  - React Hook Form + Zod for forms
-  - Axios for API requests
-  - Node.js + JSON-Server (Custom entry point for deployment)
+### 🎨 Diseño Premium (Bento Style)
+- **Interfaz Sofisticada**: Estética minimalista con gradientes profundos y efectos de cristal (Glassmorphism).
+- **Experiencia Fluida**: Animaciones de entrada escalonadas y transiciones de alto nivel.
+- **Tipografía de Lujo**: Jerarquía visual optimizada con las fuentes `Outfit` e `Inter`.
 
-## Getting Started
+### 🛡️ Seguridad Avanzada (AppSec)
+- **Password Hardening**: Validación estricta en tiempo real (8+ caracteres, mayúsculas, números y símbolos).
+- **Hasheo Irreversible**: Contraseñas cifradas en el servidor mediante **bcryptjs** (Salt 10).
+- **Anti-Brute Force**: Implementación de **Rate Limiting** para bloquear intentos de acceso no autorizados.
+- **Endpoints Blindados**: Flujo de autenticación seguro mediante POST `/login` y `/register` con prevención de enumeración de usuarios.
 
-### Prerequisites
+## 🚀 Tecnologías
 
-- Node.js (v16 or higher)
-- npm or yarn
+- **Frontend**: React 19 + Vite + Zustand
+- **Seguridad**: bcryptjs + express-rate-limit
+- **Estilos**: TailwindCSS + Premium Custom CSS
+- **Gestor de Paquetes**: pnpm v11.1.2 (Obligatorio)
 
-### Installation
+## 🛠️ Instalación y Uso
 
-1. Clone the repository (if applicable) or navigate to the project folder.
-2. Install dependencies:
+### Prerrequisitos
+- Node.js (v18+)
+- pnpm (v11+)
 
-```bash
-npm install
-```
+### Inicio Rápido
+1. Instala las dependencias:
+   ```bash
+   pnpm install
+   ```
+2. Inicia todo el ecosistema (Frontend + Backend):
+   ```bash
+   pnpm fullstack
+   ```
 
-### Running the Project
-
-You need to run both the frontend development server and the mock backend server.
-
-1. **Start the Mock Backend** (in a separate terminal):
-
-```bash
-npm run server
-```
-
-This will start JSON-Server on port 3000, serving data from `server/db.json`.
-
-2. **Start the Frontend** (in another terminal):
-
-```bash
-npm run dev
-```
-
-The application will be available at `http://localhost:5173`.
-
-## Project Structure
+## 📁 Estructura del Proyecto
 
 ```
-src/
-  components/       # Shared UI components
-    ui/             # Atomic components (Button, Input, Card)
-    layout/         # Layout components (Navbar, Footer)
-  features/         # Feature-based modules
-    admin/          # Admin dashboard & CRUD
-    auth/           # Authentication logic
-    cart/           # Cart logic
-    products/       # Product catalog logic
-  hooks/            # Custom hooks
-  lib/              # Utilities (axios, cn)
-  pages/            # Page components
-  store/            # Zustand global stores
+/
+  ├── src/
+  │   ├── components/ui/  # Incluye el nuevo PasswordField seguro
+  │   ├── pages/          # Vistas con lógica de autenticación reforzada
+  │   ├── store/          # Gestión de estado (Auth & Cart)
+  │   └── App.css         # Core del diseño premium
+  ├── server/
+  │   └── db.json         # Base de datos con passwords hasheados
+  ├── server.js           # Servidor seguro con middlewares de protección
+  └── package.json        # Scripts y dependencias actualizadas
 ```
 
-## Configuration
-Create a `.env` file in the root directory to configure the API URL:
-```env
-VITE_API_URL=http://localhost:3000
-```
+## 🔐 Acceso de Administrador (Seguro)
 
-## Deployment
-
-This project is configured for a decoupled deployment:
-
-- **Frontend**: Deployed on **Vercel**.
-- **Backend**: Deployed on **Render** (using the custom `server.js`).
-
-### Production Environment Variables
-On Vercel, ensure you set the following environment variable:
-- `VITE_API_URL`: Your Render backend URL (e.g., `https://your-api-name.onrender.com`).
-
-## Admin Access
-To access the admin panel, use the pre-configured admin account:
+Para pruebas de administración, utiliza estas credenciales:
 - **Email**: `admin@example.com`
-- **Password**: `password123` (or any string)
+- **Password**: `admin123`
 
-The login logic now verifies users against the database in `server/db.json`.
-
-## Customization
-
-- **Tailwind**: Edit `tailwind.config.js` to change the theme.
-- **Mock Data**: Edit `server/db.json` to modify initial products.
+---
+*Este proyecto ha sido auditado y refactorizado para garantizar la integridad de los datos de los usuarios.*
